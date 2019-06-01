@@ -1,4 +1,4 @@
-//get input
+//get input lmao
 getInput();
 
 var tempAccel, tempFric
@@ -151,5 +151,5 @@ if(warp != noone){
 
 
 
-show_debug_message(gamepad_get_description(4));
+//show_debug_message(gamepad_get_description(4));
 

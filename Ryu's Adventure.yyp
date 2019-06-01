@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1645536c-fbce-4aaa-b97a-a93cbee49565",
+            "Value": {
+                "id": "e3526008-8e8b-4570-be4a-907680f83523",
+                "resourcePath": "sounds\\sdCheckPoint\\sdCheckPoint.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1756ec23-3727-4f07-9189-83cd20225484",
             "Value": {
                 "id": "fdd356ae-7e45-4ee4-a097-c02a1319e33f",

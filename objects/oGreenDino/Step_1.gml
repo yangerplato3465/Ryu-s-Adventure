@@ -1,4 +1,4 @@
-var onGroundPrev = onGround;
+ var onGroundPrev = onGround;
 
 event_inherited();
 
