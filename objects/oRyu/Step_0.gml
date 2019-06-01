@@ -10,7 +10,7 @@ if(onGround){
 	ledgeJumpTimer = ledgeJumpTime; //coyote time 
 } else{
 	tempAccel = airAccel;
-	tempFric = airFric;
+	tempFric = airFric; 
 	ledgeJumpTimer--;  //coyote time 
 }
 
@@ -111,6 +111,15 @@ if(control){
 	if(place_meeting(x, y, oParentHazards) && (damaged == false)){
 		alarm[11] = 20; //set a timer for the death animation to finish
 		state = death;
+		control = false;
+	}
+	
+	//out of camera
+	var CameraX = camera_get_view_x(view_camera[0]);
+	var maxCameraX = CameraX + camera_get_view_width(view_camera[0]);
+	if(x > maxCameraX || x < CameraX){
+		alarm[11] = 20; //set a timer for the death animation to finish
+		oRyu.state = death;
 		control = false;
 	}
 	

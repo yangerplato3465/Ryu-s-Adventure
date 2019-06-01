@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "4d4e3183-c1bb-4a7d-9b2a-e04fa8d34e3f",
+            "Value": {
+                "id": "aa322fb5-b6ec-46cb-9b9d-ba342ff064f5",
+                "resourcePath": "objects\\oAutoForwardCamera\\oAutoForwardCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ec68d2e-99ae-46fc-b08e-a85b9bf4c465",
             "Value": {
                 "id": "464f992e-5360-4d9a-ab12-d55a5e0ab906",
@@ -1507,6 +1515,14 @@
             "Value": {
                 "id": "f78226a1-2d9c-4267-81b8-a3fe630803ec",
                 "resourcePath": "rooms\\r1_5\\r1_5.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f4ddfacb-93e7-4ebc-b5b6-e2b8b3134921",
+            "Value": {
+                "id": "e4965d87-5eb3-44be-ab34-06ff0048232f",
+                "resourcePath": "rooms\\r2_0\\r2_0.yy",
                 "resourceType": "GMRoom"
             }
         },
