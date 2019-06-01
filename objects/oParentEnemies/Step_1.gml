@@ -1,0 +1,2 @@
+onGround = OnGround();
+onMovingPlatform = OnMovingPlatform();
