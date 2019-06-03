@@ -1,4 +1,5 @@
 if(touchedRyu() && !touched ){
+	audio_play_sound(sdSwitch, 2, false);
 	touched = true;
 	oSwitchBlockB.state *= -1;
 	oSwitchBlockR.state *= -1;

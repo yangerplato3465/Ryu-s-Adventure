@@ -9,3 +9,9 @@ cy = 0;
 
 onGround = OnGround();
 onMovingPlatform = OnMovingPlatform();
+
+walk = 11;
+hit = 12;
+death = 13;
+
+state = walk;

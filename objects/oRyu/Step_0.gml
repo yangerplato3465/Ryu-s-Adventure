@@ -1,4 +1,4 @@
-//get input lmao
+//get input 
 getInput();
 
 var tempAccel, tempFric
@@ -77,7 +77,7 @@ if(control){
 	            if (place_meeting(x, y + 1, oParentJumpThru))
 	                ++y;
 	        } else {*/
-				audio_play_sound(sJump, 5, false);
+				audio_play_sound(sdJump, 5, false);
 	            yVelo = -jumpHeight;
 	            yscale = 1.33;
 	            xscale = 0.67;
@@ -111,6 +111,7 @@ if(control){
 	if(place_meeting(x, y, oParentHazards) && (damaged == false)){
 		alarm[11] = 20; //set a timer for the death animation to finish
 		state = death;
+		audio_play_sound(sdDeath, 3, false);
 		control = false;
 	}
 	
@@ -123,7 +124,7 @@ if(control){
 	
 	if(coyoteJump){
 		if(onGround || ledgeJumpTimer > 0){
-			audio_play_sound(sJump, 5, false);
+			audio_play_sound(sdJump, 5, false);
 			yVelo = -jumpHeight;
 	        yscale = 1.33;
 	        xscale = 0.67;
@@ -131,8 +132,24 @@ if(control){
 			jumpBufferTimer = 0
 		}
 		jumpBufferTimer--;
+	}//end of coyote jump
+	
+	//enemies
+	if(place_meeting(x, y + 6, oParentEnemies) && yVelo > 0){   //under my feet and velo should be positive
+		//var enemy = instance_place(x, y + 6, oParentEnemies);
+		//instance_destroy(enemy);
+		if(jumpHold || jump || jumpRelease){  //to jump high when stomp on enemy
+			yVelo = -jumpHeight
+		}else{
+			yVelo = -jumpHeight / 2;
+		}
+	}else if(place_meeting(x, y , oParentEnemies) && yVelo <= 0){
+		alarm[11] = 20; //set a timer for the death animation to finish
+		audio_play_sound(sdDeath, 3, false);
+		state = death;
+		control = false;
 	}
-}
+}//end of control
 
 //warp transitions
 var warp = instance_place(x, y, oWarp);

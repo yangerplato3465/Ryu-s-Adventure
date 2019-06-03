@@ -31,3 +31,9 @@ if(random(100) > 95 && abs(xVelo) > 0.5 && !onMovingPlatform) {
 //squash and stretch
 xscale = approach(xscale, 1, 0.05);
 yscale = approach(yscale, 1, 0.05);
+
+//get stomped by Ryu
+if(place_meeting(x, y - 12, oRyu) && oRyu.yVelo > 0){
+	state = hit;
+	xVelo = 0;
+}

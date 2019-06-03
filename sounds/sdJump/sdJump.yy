@@ -2,7 +2,7 @@
     "id": "ba2c606d-ff42-42fc-b3bb-73949fe70e61",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sJump",
+    "name": "sdJump",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

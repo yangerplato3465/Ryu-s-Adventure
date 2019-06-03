@@ -1,5 +1,5 @@
-if(place_meeting(x, y, oRyu)){
-	//instance_destroy(oCheese);
+if(place_meeting(x, y, oRyu) && !follow){
+	audio_play_sound(sdCollect, 3, false);
 	oRyu.hasCheese = true;
 	follow = true;
 }
