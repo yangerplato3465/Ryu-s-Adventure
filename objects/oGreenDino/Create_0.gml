@@ -11,3 +11,8 @@ jumpHeight = 7;
 facing = 1;
 xscale = 1;
 yscale = 1;
+
+stepped = false
+//make sure animation starts from frame 0
+
+  

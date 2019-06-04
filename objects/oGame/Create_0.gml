@@ -16,3 +16,5 @@ alarm[10] = 1;
 gpConnected = false;
 
 f = font_add("EquipmentPro.ttf", 20, false, false, 32, 128);
+
+audio_group_load(soundEffect);

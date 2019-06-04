@@ -77,6 +77,7 @@ if(control){
 	            if (place_meeting(x, y + 1, oParentJumpThru))
 	                ++y;
 	        } else {*/
+				audio_group_set_gain(soundEffect, random_range(0.15, 0.3), 0);
 				audio_play_sound(sdJump, 5, false);
 	            yVelo = -jumpHeight;
 	            yscale = 1.33;
@@ -108,11 +109,12 @@ if(control){
 	}
 
 	//touch spikes
-	if(place_meeting(x, y, oParentHazards) && (damaged == false)){
+	if(place_meeting(x, y, oParentHazards) && (!damaged)){
 		alarm[11] = 20; //set a timer for the death animation to finish
 		state = death;
 		audio_play_sound(sdDeath, 3, false);
 		control = false;
+		damage = true;
 	}
 	
 	//coyote time
@@ -135,7 +137,7 @@ if(control){
 	}//end of coyote jump
 	
 	//enemies
-	if(place_meeting(x, y + 6, oParentEnemies) && yVelo > 0){   //under my feet and velo should be positive
+	/*if(place_meeting(x, y + 6, oParentEnemies) && yVelo > 0){   //under my feet and velo should be positive
 		//var enemy = instance_place(x, y + 6, oParentEnemies);
 		//instance_destroy(enemy);
 		if(jumpHold || jump || jumpRelease){  //to jump high when stomp on enemy
@@ -148,7 +150,7 @@ if(control){
 		audio_play_sound(sdDeath, 3, false);
 		state = death;
 		control = false;
-	}
+	}*/
 }//end of control
 
 //warp transitions

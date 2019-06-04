@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sdSwitch",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "b8b76b5b-1516-4671-a4a3-d520c726ec92",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

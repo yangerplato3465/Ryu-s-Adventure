@@ -15,3 +15,5 @@ hit = 12;
 death = 13;
 
 state = walk;
+
+lastSprite = sprite_index;
