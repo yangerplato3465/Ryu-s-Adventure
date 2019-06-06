@@ -1,10 +1,10 @@
 switch (state) {
 	case walk:
-		sprite_index = sGreenDinoRun;
+		sprite_index = sRatRun;
 	break;
 	
 	case hit:
-		sprite_index = sGreenDinoHit;
+		sprite_index = sRatHit;
 	break;
 	
 }

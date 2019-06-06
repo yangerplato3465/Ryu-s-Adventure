@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "6483a55f-f5e7-4e24-8fdf-be17add3a00f",
+            "Value": {
+                "id": "672e9576-3c8c-4443-a05a-159f56a6d031",
+                "resourcePath": "sprites\\sRatHit\\sRatHit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6548d3c1-7927-45a0-b3bc-68075227c243",
             "Value": {
                 "id": "749cca47-4f59-4415-8e0c-ab0c8b6ec612",
@@ -1123,6 +1131,14 @@
             "Value": {
                 "id": "52a7061e-41f2-43cf-b341-09035e38db1b",
                 "resourcePath": "sprites\\sLocker\\sLocker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8f62b6be-5470-4e1d-b108-d012d45e5c11",
+            "Value": {
+                "id": "16f3ad9d-b3bd-4667-a00c-cfe6bc0392c0",
+                "resourcePath": "sprites\\sRatRun\\sRatRun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1612,6 +1628,14 @@
                 "id": "653eafde-e78c-4f76-ac73-35bd1e78dad8",
                 "resourcePath": "objects\\oRedDino\\oRedDino.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d71be01c-06fc-405f-ba12-626bcf7d37b5",
+            "Value": {
+                "id": "9a444780-5184-400e-8054-158b2e03ce48",
+                "resourcePath": "views\\d71be01c-06fc-405f-ba12-626bcf7d37b5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
