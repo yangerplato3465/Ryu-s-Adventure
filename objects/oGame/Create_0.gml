@@ -11,7 +11,7 @@ deathFade = false;
 
 timerSecond = 0;
 timerMinute = 0;
-alarm[10] = 1;
+//alarm[10] = 1;
 
 gpConnected = false;
 
