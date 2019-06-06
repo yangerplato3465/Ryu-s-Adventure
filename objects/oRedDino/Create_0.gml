@@ -1,4 +1,4 @@
-//green dino walks like goomba
+//red Dino chase player
 event_inherited();
 groundAccel = 0.1;
 groundFric = 0.01;

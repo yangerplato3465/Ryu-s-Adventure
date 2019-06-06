@@ -1,5 +1,5 @@
 
-if(gamepad_is_connected(0)){
+/*if(gamepad_is_connected(0)){
 	up = gamepad_axis_value(0, gp_axislv) < -0.4 || gamepad_button_check(0, gp_padu) || keyboard_check(vk_up);
 	down = gamepad_axis_value(0, gp_axislv) >  0.4 || gamepad_button_check(0, gp_padd) || keyboard_check(vk_down);
 	left = gamepad_axis_value(0, gp_axislh) < -0.4 || gamepad_button_check(0, gp_padl) || keyboard_check(vk_left);
@@ -21,7 +21,7 @@ if(gamepad_is_connected(0)){
 	jumpHold = gamepad_button_check(4, gp_face1) || keyboard_check(ord("Z"));
 	start = gamepad_button_check_pressed(4, gp_start) || keyboard_check_pressed(vk_enter);
 	select = gamepad_button_check_pressed(4, gp_select) || keyboard_check_pressed(vk_escape);
-}else{
+}else{*/
 	up = keyboard_check(vk_up); 
 	down = keyboard_check(vk_down);
 	left = keyboard_check(vk_left);
@@ -32,4 +32,6 @@ if(gamepad_is_connected(0)){
 	jumpHold = keyboard_check(ord("Z"));
 	start = keyboard_check_pressed(vk_enter);
 	select = keyboard_check_pressed(vk_escape);
-}
+	upMenu = keyboard_check_pressed(vk_up); 
+	downMenu = keyboard_check_pressed(vk_down);
+//}

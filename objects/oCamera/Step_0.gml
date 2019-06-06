@@ -1,11 +1,11 @@
 //if(!instance_exists(oRyuController)) exit;
-//instance_exists檢查地圖裡是否存在oRyu
+
 if(instance_exists(oRyu)){
 	var target_x = oRyu.x;
 	var target_y = oRyu.y;
 
 
-	x = lerp(x, target_x, 0.1); 
+	x = lerp(x, target_x, 0.1);
 	y = target_y;
 
 	if(x < width * 0.5){

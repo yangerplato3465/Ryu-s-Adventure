@@ -1,1 +1,1 @@
-targetRoom = r2_0;
+targetRoom = rCredit;

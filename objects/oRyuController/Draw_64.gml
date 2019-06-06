@@ -1,5 +1,6 @@
 var text1 = "X" + string(deathCount);
 var text2 = "X" + string(cheeseCount);
+draw_set_halign(fa_left);
 
 if(room != rCredit){
 	draw_sprite(sDeathCounter, -1, healthX, healthY + 5);
